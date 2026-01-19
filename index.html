@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>me.sunmc | SunMC</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=JetBrains+Mono:wght@300;500&family=Montserrat:wght@300;400;600&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="components/apps/style.css">
+    <link rel="icon" href="components/images/sunmc.png" type="image/webp">
+
+</head>
+
+<body class="loading">
+
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <div id="boot-sequence">
+        <div class="terminal-loader">
+            <span class="prefix">root@sunmc:~#</span>
+            <span class="typing">init_protocol --force</span>
+        </div>
+    </div>
+
+    <nav class="imperial-nav">
+        <div class="brand hover-target">
+            <i class="fa-solid fa-crown gold-icon"></i>
+            <span class="package">me.sunmc</span>
+        </div>
+        <div class="nav-items">
+            <a href="#matrix" class="nav-link hover-target" data-target="matrix">01 // MATRIX</a>
+            <a href="#artifacts" class="nav-link hover-target" data-target="artifacts">02 // ARTIFACTS</a>
+            <a href="#services" class="nav-link hover-target" data-target="services">03 // PROTOCOLS</a>
+            <a href="#codebase" class="nav-link hover-target" data-target="codebase">04 // ARCHITECTURE</a>
+            <a href="#contact" class="nav-link hover-target" data-target="contact">05 // UPLINK</a>
+        </div>
+        <a href="#contact" class="action-btn hover-target">EXECUTE</a>
+    </nav>
+
+    <main id="app">
+
+        <section id="matrix" class="view-port">
+            <canvas id="constellation-canvas"></canvas>
+            <div class="hero-content">
+                <div class="hero-label">JAVA 21 / PAPER / INDUSTRIAL</div>
+                <h1 class="glitch-text" data-text="SOVEREIGN">SOVEREIGN</h1>
+                <h2 class="sub-hero">ENGINEERING</h2>
+                <p class="manifesto">
+                    Architecting high-performance, async-threaded ecosystems for the modern Minecraft server.
+                    Where <span class="highlight">Modern Practices</span> meet <span class="highlight-pink">Creative
+                        Logic</span>.
+                </p>
+                <div class="cmd-line">
+                    <span class="prompt">></span> <span class="cursor">_</span>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="mouse">
+                    <div class="wheel"></div>
+                </div>
+                <span>SCROLL TO INITIALIZE</span>
+            </div>
+        </section>
+
+        <section id="artifacts" class="view-port">
+            <div class="section-title">
+                <span class="num">02</span>
+                <h3>COMPILED ARTIFACTS</h3>
+                <div class="line"></div>
+            </div>
+            <div class="grid-system" id="project-grid">
+            </div>
+        </section>
+
+        <section id="services" class="view-port">
+            <div class="section-title">
+                <span class="num">03</span>
+                <h3>DEPLOYMENT PROTOCOLS</h3>
+                <div class="line"></div>
+            </div>
+
+            <div class="service-grid">
+                <div class="service-card hover-target">
+                    <div class="icon-box"><i class="fa-solid fa-server"></i></div>
+                    <h4>Server Config</h4>
+                    <p>Optimized Spigot/Paper configurations focusing on TPS retention and exploit prevention.</p>
+                </div>
+
+                <div class="service-card featured hover-target">
+                    <div class="icon-box"><i class="fa-solid fa-code"></i></div>
+                    <h4>Industrial Plugin Dev</h4>
+                    <p>Custom Java 21 plugins built with the Modern frameworks. High concurrency, zero lag.</p>
+                </div>
+
+                <div class="service-card hover-target">
+                    <div class="icon-box"><i class="fa-solid fa-network-wired"></i></div>
+                    <h4>Network Architecture</h4>
+                    <p>Full BungeeCord/Velocity setup with load balancing and synchronized data.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="codebase" class="view-port">
+            <div class="split-layout">
+                <div class="text-side">
+                    <div class="section-title">
+                        <span class="num">04</span>
+                        <h3>THE ARCHITECTURE</h3>
+                    </div>
+                    <p class="manifesto">
+                        My code adheres to strict industrial standards. No deprecated APIs.
+                        No NMS hacks unless wrapped in version-safe reflections.
+                    </p>
+                    <ul class="specs-list">
+                        <li>
+                            <i class="fa-solid fa-check-double"></i>
+                            <span>Java 21 Records & Pattern Matching</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-bolt"></i>
+                            <span>Async Computations (CompletableFutures)</span>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-box-open"></i>
+                            <span>Dependency Injection Patterns</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="code-side">
+                    <div class="ide-frame hover-target">
+                        <div class="ide-header">
+                            <div class="dots-group">
+                                <span class="dot r"></span>
+                                <span class="dot y"></span>
+                                <span class="dot g"></span>
+                            </div>
+                            <span class="file-path">me/sunmc/Main.java</span>
+                        </div>
+                        <div class="ide-body">
+                            <pre><code id="typewriter-code" class="language-java"></code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="view-port">
+            <div class="section-title">
+                <span class="num">05</span>
+                <h3>ESTABLISH UPLINK</h3>
+                <div class="line"></div>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-card hover-target">
+                        <i class="fa-brands fa-discord"></i>
+                        <h5>Discord Mainframe</h5>
+                        <p>Join for support & commissions</p>
+                        <a href="https://discord.gg/maDcwPV6KB" target="_blank" class="link-gold">Connect &rarr;</a>
+                    </div>
+                    <div class="info-card hover-target">
+                        <i class="fa-solid fa-envelope"></i>
+                        <h5>Direct Feed</h5>
+                        <p>sun.minecraftdev@gmail.com</p>
+                        <a href="mailto:sun.minecraftdev@gmail.com" class="link-gold">Send Packet &rarr;</a>
+                    </div>
+                </div>
+
+                <form action="https://formspree.io/f/mbddoewo" method="POST" class="imperial-form">
+                    <div class="form-group">
+                        <input type="text" name="name" required placeholder=" " class="hover-target">
+                        <label>Operator Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" required placeholder=" " class="hover-target">
+                        <label>Comms Frequency (Email)</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" required placeholder=" " class="hover-target"></textarea>
+                        <label>Mission Briefing</label>
+                    </div>
+                    <button type="submit" class="submit-btn hover-target">TRANSMIT DATA</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="imperial-footer">
+        <div class="footer-content">
+            <p>&copy; 2026 me.sunmc | <span class="highlight-pink">SunMC Development Team</span></p>
+            <p class="tiny">System Status: <span class="highlight">ONLINE</span> | Java 21 Environment</p>
+        </div>
+    </footer>
+
+    <script src="components/apps/app.js"></script>
+</body>
+
+</html>
