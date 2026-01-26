@@ -32,10 +32,10 @@ export const PROJECT_DATA = [
     },
     {
         id: "p3",
-        name: "SunCrates (soon)",
-        stack: "Paper API • Java 21 • PacketEvents • Async Operations • GUI Framework",
-        desc: "A modern crate plugin for Paper servers (1.21.4+) featuring animated GUIs, async operations, and packet-level optimizations for lag-free gameplay.",
-        link: "#",
+        name: "AntiCam",
+        stack: "Paper API • Java 21 • PacketEvents • Async Operations • ESP Detection • Freecam Prevention",
+        desc: "AntiCam is a powerful, production-ready Minecraft plugin designed to detect and prevent FreeCam and ESP (Extra Sensory Perception) exploits. Built with modern Java practices and optimized for high-performance servers.",
+        link: "https://github.com/sun-mc-dev/AntiCam",
         jarlink: "#",
         tags: ["java", "packet"]
     }
@@ -202,4 +202,5 @@ class PortfolioApp {
 document.addEventListener('DOMContentLoaded', () => {
     window.app = new PortfolioApp();
     console.log('%c✓ Portfolio System Online', 'color: #C5A059; font-size: 16px; font-family: monospace;');
+
 });
